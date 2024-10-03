@@ -36,11 +36,11 @@
 
         default_layer {
             bindings = <
-&kp ESC    &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 1                                                                                                      &mo 3                   &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp RIGHT_SHIFT
-&kp EQUAL  &kp Q      &kp W       &kp E     &kp R      &kp T   &kp LS(LC(LA(LG(F1))))                                                                                      &kp LS(LC(LA(LG(F3))))  &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp EQUAL  &kp A      &kp S       &kp D     &kp F      &kp G   &kp LS(LC(LA(LG(F2))))  &kp LCTRL  &mt LGUI LS(LA(LC(LG(F5))))      &mt RGUI LS(LA(LC(LG(F6))))  &kp RCTRL  &kp LS(LC(LA(LG(F4))))  &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp TAB    &kp Z      &kp X       &kp C     &kp V      &kp B                                      &kp LALT                         &kp RALT                                                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp MINUS
-&mo 2      &kp GRAVE  &caps_word  &kp LEFT  &kp RIGHT          &kp BSPC                &kp DEL    &kp LSHFT                        &kp RSHIFT                   &kp ENTER  &kp SPACE                       &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
+&kp ESC    &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 1                                                                                                            &mo 3                   &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp RIGHT_SHIFT
+&kp EQUAL  &kp Q      &kp W       &kp E     &kp R      &kp T   &kp LS(LC(LA(LG(F1))))                                                                                            &kp LS(LC(LA(LG(F3))))  &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp EQUAL  &kp A      &kp S       &kp D     &kp F      &kp G   &kp LS(LC(LA(LG(F2))))  &kp LEFT_SHIFT  &mt LGUI LS(LA(LC(LG(F5))))      &mt RGUI LS(LA(LC(LG(F6))))  &kp RSHIFT  &kp LS(LC(LA(LG(F4))))  &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp TAB    &kp Z      &kp X       &kp C     &kp V      &kp B                                           &kp LCTRL                        &kp RCTRL                                                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp MINUS
+&mo 2      &kp GRAVE  &caps_word  &kp LEFT  &kp RIGHT          &kp BSPC                &kp DEL         &kp LALT                         &kp RALT                     &kp ENTER   &kp SPACE                       &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
             >;
         };
 
