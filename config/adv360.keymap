@@ -31,6 +31,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        go-to-tarmak-layer {
+            bindings = <&tog 4>;
+            key-positions = <65 70>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
