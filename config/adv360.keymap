@@ -35,8 +35,8 @@
     combos {
         compatible = "zmk,combos";
 
-        go-to-tarmak-layer {
-            bindings = <&tog 1>;
+        go-to-qwerty-layer {
+            bindings = <&tog 4>;
             key-positions = <65 70>;
         };
     };
@@ -44,39 +44,29 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            bindings = <
-&kp ESC    &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 2                                                                                                            &mo 4                   &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp RIGHT_SHIFT
-&kp EQUAL  &kp Q      &kp W       &kp E     &kp R      &kp T   &kp LS(LC(LA(LG(F1))))                                                                                            &kp LS(LC(LA(LG(F3))))  &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp TAB    &kp A      &kp S       &kp D     &kp F      &kp G   &kp LS(LC(LA(LG(F2))))  &kp LEFT_SHIFT  &mt LGUI LS(LA(LC(LG(F5))))      &mt RGUI LS(LA(LC(LG(F6))))  &kp RSHIFT  &kp LS(LC(LA(LG(F4))))  &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp TAB    &kp Z      &kp X       &kp C     &kp V      &kp B                                           &kp LCTRL                        &kp RCTRL                                                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp MINUS
-&mo 3      &kp GRAVE  &caps_word  &kp LEFT  &kp RIGHT          &kp BSPC                &kp DEL         &kp LALT                         &kp LALT                     &kp ENTER   &kp SPACE                       &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 3
-            >;
-        };
-
         Colemak-DH {
             bindings = <
-&kp ESC    &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 2                                                                                                            &mo 4                   &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp RIGHT_SHIFT
+&kp ESC    &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 1                                                                                                            &mo 3                   &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp RIGHT_SHIFT
 &kp EQUAL  &kp Q      &kp W       &kp F     &kp P      &kp B   &kp LS(LC(LA(LG(F1))))                                                                                            &kp LS(LC(LA(LG(F3))))  &kp J   &kp L   &kp U      &kp Y     &kp SEMI  &kp BSLH
 &kp TAB    &kp A      &kp R       &kp S     &kp T      &kp G   &kp LS(LC(LA(LG(F2))))  &kp LEFT_SHIFT  &mt LGUI LS(LA(LC(LG(F5))))      &mt RGUI LS(LA(LC(LG(F6))))  &kp RSHIFT  &kp LS(LC(LA(LG(F4))))  &kp M   &kp N   &kp E      &kp I     &kp O     &kp SQT
 &kp TAB    &kp Z      &kp X       &kp C     &kp D      &kp V                                           &kp LCTRL                        &kp RCTRL                                                        &kp K   &kp H   &kp COMMA  &kp DOT   &kp FSLH  &kp MINUS
-&mo 3      &kp GRAVE  &caps_word  &kp LEFT  &kp RIGHT          &kp BSPC                &kp DEL         &kp LALT                         &kp LALT                     &kp ENTER   &kp SPACE                       &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 3
+&mo 2      &kp GRAVE  &caps_word  &kp LEFT  &kp RIGHT          &kp BSPC                &kp DEL         &kp LALT                         &kp LALT                     &kp ENTER   &kp SPACE                       &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
             >;
         };
 
         layer_keypad {
             bindings = <
-&trans  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                            &mo 4      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &trans
+&trans  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                            &mo 3      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &trans
 &trans  &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                             &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &trans
 &trans  &kp A      &kp S     &kp D     &kp F      &kp G   &none     &trans   &trans      &trans  &trans     &none      &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &trans
 &trans  &kp Z      &kp X     &kp C     &kp V      &kp B                      &trans      &trans                        &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &trans
-&mo 3   &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL  &trans      &trans  &kp ENTER  &kp KP_N0          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 3
+&mo 2   &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL  &trans      &trans  &kp ENTER  &kp KP_N0          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 2
             >;
         };
 
         layer_fn {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4    &kp F5   &kp F6  &tog 2                                        &mo 4   &kp F7  &kp F8     &kp F9     &kp F10  &kp F11  &kp F12
+&kp F1  &kp F2  &kp F3  &kp F4    &kp F5   &kp F6  &tog 1                                        &mo 3   &kp F7  &kp F8     &kp F9     &kp F10  &kp F11  &kp F12
 &trans  &trans  &trans  &trans    &trans   &trans  &none                                         &none   &trans  &trans     &trans     &trans   &trans   &trans
 &trans  &trans  &trans  &trans    &trans   &trans  &none   &trans  &trans      &kp LGUI  &trans  &none   &trans  &trans     &trans     &trans   &trans   &trans
 &trans  &trans  &trans  &trans    &trans   &trans                  &trans      &trans                    &trans  &trans     &trans     &trans   &trans   &trans
@@ -94,23 +84,13 @@
             >;
         };
 
-        Tarmak-1DH {
+        default_layer {
             bindings = <
-&kp ESC    &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 2                                                                                                            &mo 4                   &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp RIGHT_SHIFT
-&kp EQUAL  &kp Q      &kp W       &kp J     &kp R      &kp T   &kp LS(LC(LA(LG(F1))))                                                                                            &kp LS(LC(LA(LG(F3))))  &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp EQUAL  &kp A      &kp S       &kp D     &kp F      &kp G   &kp LS(LC(LA(LG(F2))))  &kp LEFT_SHIFT  &mt LGUI LS(LA(LC(LG(F5))))      &mt RGUI LS(LA(LC(LG(F6))))  &kp RSHIFT  &kp LS(LC(LA(LG(F4))))  &kp M   &kp N   &kp E      &kp L     &kp SEMI  &kp SQT
-&kp TAB    &kp Z      &kp X       &kp C     &kp V      &kp B                                           &kp LCTRL                        &kp RCTRL                                                        &kp K   &kp H   &kp COMMA  &kp DOT   &kp FSLH  &kp MINUS
-&mo 3      &kp GRAVE  &caps_word  &kp LEFT  &kp RIGHT          &kp BSPC                &kp DEL         &kp LALT                         &kp LALT                     &kp ENTER   &kp SPACE                       &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 3
-            >;
-        };
-
-        Tarmak-2DH {
-            bindings = <
-&kp ESC    &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 2                                                                                                            &mo 4                   &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp RIGHT_SHIFT
-&kp EQUAL  &kp Q      &kp W       &kp F     &kp R      &kp B   &kp LS(LC(LA(LG(F1))))                                                                                            &kp LS(LC(LA(LG(F3))))  &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp EQUAL  &kp A      &kp S       &kp D     &kp T      &kp G   &kp LS(LC(LA(LG(F2))))  &kp LEFT_SHIFT  &mt LGUI LS(LA(LC(LG(F5))))      &mt RGUI LS(LA(LC(LG(F6))))  &kp RSHIFT  &kp LS(LC(LA(LG(F4))))  &kp M   &kp N   &kp E      &kp L     &kp SEMI  &kp SQT
-&kp TAB    &kp Z      &kp X       &kp C     &kp J      &kp V                                           &kp LCTRL                        &kp RCTRL                                                        &kp K   &kp H   &kp COMMA  &kp DOT   &kp FSLH  &kp MINUS
-&mo 3      &kp GRAVE  &caps_word  &kp LEFT  &kp RIGHT          &kp BSPC                &kp DEL         &kp LALT                         &kp LALT                     &kp ENTER   &kp SPACE                       &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 3
+&kp ESC    &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 1                                                                                                            &mo 3                   &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp RIGHT_SHIFT
+&kp EQUAL  &kp Q      &kp W       &kp E     &kp R      &kp T   &kp LS(LC(LA(LG(F1))))                                                                                            &kp LS(LC(LA(LG(F3))))  &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp TAB    &kp A      &kp S       &kp D     &kp F      &kp G   &kp LS(LC(LA(LG(F2))))  &kp LEFT_SHIFT  &mt LGUI LS(LA(LC(LG(F5))))      &mt RGUI LS(LA(LC(LG(F6))))  &kp RSHIFT  &kp LS(LC(LA(LG(F4))))  &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp TAB    &kp Z      &kp X       &kp C     &kp V      &kp B                                           &kp LCTRL                        &kp RCTRL                                                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp MINUS
+&mo 2      &kp GRAVE  &caps_word  &kp LEFT  &kp RIGHT          &kp BSPC                &kp DEL         &kp LALT                         &kp LALT                     &kp ENTER   &kp SPACE                       &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
             >;
         };
     };
