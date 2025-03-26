@@ -46,11 +46,11 @@
 
         Colemak-DH {
             bindings = <
-&kp ESC    &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 1                                                                                                            &mo 3                   &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp RIGHT_SHIFT
-&kp EQUAL  &kp Q      &kp W       &kp F     &kp P      &kp B   &kp LS(LC(LA(LG(F1))))                                                                                            &kp LS(LC(LA(LG(F3))))  &kp J   &kp L   &kp U      &kp Y     &kp SEMI  &kp BSLH
-&kp TAB    &kp A      &kp R       &kp S     &kp T      &kp G   &kp LS(LC(LA(LG(F2))))  &kp LEFT_SHIFT  &mt LGUI LS(LA(LC(LG(F5))))      &mt RGUI LS(LA(LC(LG(F6))))  &kp RSHIFT  &kp LS(LC(LA(LG(F4))))  &kp M   &kp N   &kp E      &kp I     &kp O     &kp SQT
-&kp TAB    &kp Z      &kp X       &kp C     &kp D      &kp V                                           &kp LCTRL                        &kp RCTRL                                                        &kp K   &kp H   &kp COMMA  &kp DOT   &kp FSLH  &kp MINUS
-&mo 2      &kp GRAVE  &caps_word  &kp LEFT  &kp RIGHT          &kp BSPC                &kp DEL         &kp LALT                         &kp LALT                     &kp ENTER   &kp SPACE                       &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
+&none      &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 1                                                                                                   &mo 3                &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &none
+&kp ESC    &kp Q      &kp W       &kp F     &kp P      &kp B   &kp LS(LC(LA(F13)))                                                                                      &kp LS(LC(LA(F15)))  &kp J   &kp L   &kp U      &kp Y     &kp SEMI  &kp BSLH
+&kp TAB    &kp A      &kp R       &kp S     &kp T      &kp G   &kp LS(LC(LA(F14)))  &kp LEFT_SHIFT  &mt LGUI LS(LA(LC(F17)))      &mt LGUI LS(LA(LC(F18)))  &kp RSHIFT  &kp LS(LC(LA(F16)))  &kp M   &kp N   &kp E      &kp I     &kp O     &kp SQT
+&kp EQUAL  &kp Z      &kp X       &kp C     &kp D      &kp V                                        &kp LCTRL                     &kp RCTRL                                                  &kp K   &kp H   &kp COMMA  &kp DOT   &kp FSLH  &kp MINUS
+&mo 2      &kp GRAVE  &caps_word  &kp LEFT  &kp RIGHT          &kp BSPC             &kp DEL         &kp LALT                      &kp LALT                  &kp ENTER   &kp SPACE                    &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
             >;
         };
 
